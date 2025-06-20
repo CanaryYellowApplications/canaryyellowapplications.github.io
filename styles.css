@@ -1,0 +1,73 @@
+/* === Theme Variables === */
+:root {
+  --color-background: #dadada;         /* Matches Flutter Colors.grey[350] */
+  --color-appbar: #ffeb3b;             /* Canary Yellow */
+  --color-text-dark: #222222;
+  --color-text-subtle: #555555;
+
+  --font-main: 'Inter', sans-serif;
+
+  --max-content-width: 700px;
+}
+
+/* === Global Reset & Base === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  font-family: var(--font-main);
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === AppBar (Header) === */
+.appbar {
+  background-color: var(--color-appbar);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appbar h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* === Main Content === */
+main {
+  max-width: var(--max-content-width);
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main img {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-subtle);
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+footer a {
+  color: var(--color-text-subtle);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
