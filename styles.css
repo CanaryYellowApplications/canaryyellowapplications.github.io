@@ -35,6 +35,25 @@ body {
   margin: 0;
 }
 
+.appbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-link {
+  position: absolute;
+  left: 20px;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
 /* === Main Content === */
 main {
   max-width: var(--max-content-width);
