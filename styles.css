@@ -31,10 +31,11 @@ body {
 }
 
 .appbar h1 {
-  font-size: clamp(20px, 5vw, 28px); /* Responsive text sizing */
   margin: 0;
   text-align: center;
   flex: 1;
+  font-size: clamp(16px, 6vw, 28px);  /* ← Shrinks more on small screens */
+  padding: 0 50px; /* ← Space buffer on both sides */
 }
 
 
@@ -51,10 +52,10 @@ body {
 .home-link {
   position: absolute;
   left: 20px;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px); /* ← Shrinks on small screens too */
+  white-space: nowrap;
   text-decoration: none;
   color: var(--color-text-dark);
-  white-space: nowrap;
 }
 
 .home-link:hover {
