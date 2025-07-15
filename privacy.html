@@ -13,9 +13,9 @@
 </head>
 <body>
 
-  <header class="appbar">
-    <h1>Canary Yellow Applications</h1>
-  </header>
+
+  <!-- Reusable AppBar -->
+  <div id="appbar-include"></div>
 
   <main>
     <h2>Privacy Policy</h2>
@@ -38,5 +38,20 @@ Privacy Policy |
   </footer>
   </main>
 
+  <!-- Script to Load AppBar with Optional Home Button -->
+  <script>
+    const appbarContainer = document.getElementById('appbar-include');
+    const hideHome = appbarContainer.getAttribute('data-hide-home') === 'true';
+
+    fetch('appbar.html')
+      .then(res => res.text())
+      .then(html => {
+        appbarContainer.innerHTML = html;
+        if (hideHome) {
+          const homeLink = document.getElementById('home-button');
+          if (homeLink) homeLink.style.display = 'none';
+        }
+      });
+  </script>
 </body>
 </html>
