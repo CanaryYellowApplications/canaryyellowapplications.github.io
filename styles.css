@@ -52,13 +52,15 @@ body {
 .home-link {
   position: absolute;
   left: 20px;
-  text-decoration: none;
   color: var(--color-text-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.home-icon {
-  font-size: 24px; /* Or any fixed size you like */
-  display: inline-block;
+.home-link .material-icons {
+  font-size: 28px;
+  vertical-align: middle;
 }
 
 /* === Main Content === */
