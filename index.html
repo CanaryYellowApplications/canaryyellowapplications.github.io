@@ -12,10 +12,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header class="appbar">
-    <h1>Canary Yellow Applications</h1>
-  </header>
+  
+  <!-- Reusable AppBar with hideHome flag -->
+  <div id="appbar-include" data-hide-home="true"></div>
 
   <main>
     <img src="cya_black_on_transparent.png" alt="Canary Yellow Logo" />
@@ -28,5 +27,21 @@
     <a href="support.html">Support</a>
   </footer>
 
+  <!-- AppBar loader script -->
+  <script>
+    const appbarContainer = document.getElementById('appbar-include');
+    const hideHome = appbarContainer.getAttribute('data-hide-home') === 'true';
+
+    fetch('appbar.html')
+      .then(res => res.text())
+      .then(html => {
+        appbarContainer.innerHTML = html;
+        if (hideHome) {
+          const homeLink = document.getElementById('home-button');
+          if (homeLink) homeLink.style.display = 'none';
+        }
+      });
+  </script>
+  
 </body>
 </html>
