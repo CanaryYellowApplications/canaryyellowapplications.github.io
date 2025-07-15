@@ -52,14 +52,13 @@ body {
 .home-link {
   position: absolute;
   left: 20px;
-  font-size: clamp(12px, 3vw, 16px); /* ← Shrinks on small screens too */
-  white-space: nowrap;
   text-decoration: none;
   color: var(--color-text-dark);
 }
 
-.home-link:hover {
-  text-decoration: underline;
+.home-icon {
+  font-size: 24px; /* Or any fixed size you like */
+  display: inline-block;
 }
 
 /* === Main Content === */
