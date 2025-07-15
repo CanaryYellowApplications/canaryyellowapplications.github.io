@@ -25,30 +25,36 @@ body {
 /* === AppBar (Header) === */
 .appbar {
   background-color: var(--color-appbar);
-  text-align: center;
   padding: 20px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #aaa;
 }
 
 .appbar h1 {
-  font-size: 28px;
+  font-size: clamp(20px, 5vw, 28px); /* Responsive text sizing */
   margin: 0;
+  text-align: center;
+  flex: 1;
 }
+
 
 .appbar-content {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .home-link {
   position: absolute;
   left: 20px;
   font-size: 16px;
-  color: var(--color-text-dark);
   text-decoration: none;
+  color: var(--color-text-dark);
+  white-space: nowrap;
 }
 
 .home-link:hover {
