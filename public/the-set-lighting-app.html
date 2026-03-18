@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Set Lighting App | Canary Yellow Applications</title>
+    <style>
+      :root {
+        --bg: #fff7d8;
+        --ink: #1d1300;
+        --ink-soft: rgba(29, 19, 0, 0.75);
+        --line: rgba(29, 19, 0, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fffdf2 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(760px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 4rem;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .card {
+        padding: 2rem;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      h1,
+      h2 {
+        color: var(--ink);
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.15rem;
+      }
+
+      p {
+        line-height: 1.75;
+        color: var(--ink-soft);
+      }
+
+      .availability {
+        margin-top: 2.25rem;
+      }
+
+      .store-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .store-badge {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .store-badge img {
+        display: block;
+        height: 3rem;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="/">Back to home</a></p>
+      <section class="card">
+        <h1>The Set Lighting App</h1>
+        <p>
+          This is the placeholder page for The Set Lighting App. It will eventually introduce the
+          app, explain what it does, and give visitors a clearer sense of who it is for.
+        </p>
+        <p>
+          For now, this page exists so the main site can link to a dedicated product page while we
+          shape the full app catalog and decide how each app should be presented.
+        </p>
+
+        <h2>What will go here later</h2>
+        <p>
+          Later we can add screenshots, feature descriptions, platform availability, and a short
+          explanation of the specific lighting workflow this app is designed to support.
+        </p>
+
+        <section class="availability">
+          <h2>Available on</h2>
+          <div class="store-links">
+            <a
+              class="store-badge"
+              href="https://apps.apple.com/us/app/the-set-lighting-app/id6753724639"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/store-badges/app-store.svg" alt="Download on the App Store" />
+            </a>
+            <a
+              class="store-badge"
+              href="https://play.google.com/store/apps/details?id=com.canaryyellowapplications.thesetlightingapp&pcampaignid=web_share"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/store-badges/google-play.png" alt="Get it on Google Play" />
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

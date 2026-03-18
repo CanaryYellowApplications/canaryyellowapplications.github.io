@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.env.osx": {
+    "PATH": "/opt/homebrew/opt/node@22/bin:${env:PATH}"
+  }
+}
