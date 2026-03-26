@@ -1,6 +1,5 @@
 :root {
-  --bg: #fff7d8;
-  --bg-deep: #f1d26a;
+  --page-bg: #f8e8ab;
   --ink: #1d1300;
   --ink-soft: rgba(29, 19, 0, 0.75);
   --line: rgba(29, 19, 0, 0.12);
@@ -37,8 +36,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(180deg, #fffdf2 0%, var(--bg) 56%, var(--bg-deep) 100%);
-  background-color: var(--bg-deep);
+  background: var(--page-bg);
 }
 
 main {

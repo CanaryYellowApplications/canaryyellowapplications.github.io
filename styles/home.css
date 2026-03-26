@@ -1,6 +1,5 @@
 :root {
-  --bg: #f6e39f;
-  --bg-deep: #f1c94a;
+  --page-bg: #f8e8ab;
   --ink: #1d1300;
   --ink-soft: rgba(29, 19, 0, 0.72);
   --card: rgba(255, 248, 221, 0.78);
@@ -40,10 +39,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.75), transparent 32%),
-    linear-gradient(180deg, #fff5c7 0%, var(--bg) 52%, var(--bg-deep) 100%);
-  background-color: var(--bg-deep);
+  background: var(--page-bg);
 }
 
 a {
