@@ -53,18 +53,6 @@ a {
   box-shadow: var(--shadow);
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: -7rem;
-  right: -6rem;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 999px;
-  background: rgba(255, 209, 41, 0.34);
-  filter: blur(6px);
-}
-
 .hero-grid {
   position: relative;
   z-index: 1;
@@ -216,6 +204,16 @@ h1 {
   color: var(--ink-soft);
   font-size: 0.9rem;
   line-height: 1;
+}
+
+.footer-nav-secondary {
+  margin-top: 1.25rem;
+  padding-bottom: 0;
+}
+
+.footer-label {
+  color: var(--ink-soft);
+  font-weight: 500;
 }
 
 .footer-link {
