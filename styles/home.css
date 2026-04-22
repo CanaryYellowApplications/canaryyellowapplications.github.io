@@ -211,6 +211,10 @@ h1 {
   padding-bottom: 0;
 }
 
+.footer-nav-social {
+  align-items: center;
+}
+
 .footer-label {
   color: var(--ink-soft);
   font-weight: 400;
@@ -258,8 +262,8 @@ h1 {
 
 .social-icon {
   display: block;
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.62rem;
+  height: 1.62rem;
   object-fit: contain;
 }
 
