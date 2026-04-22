@@ -217,11 +217,7 @@ h1 {
 }
 
 .footer-link-group {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1.25rem;
+  display: contents;
 }
 
 .footer-icon-group {
@@ -252,13 +248,11 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--ink-soft);
   text-decoration: none;
 }
 
 .social-link:hover,
 .social-link:focus-visible {
-  color: var(--ink);
   outline: none;
 }
 
@@ -266,11 +260,7 @@ h1 {
   display: block;
   width: 1.35rem;
   height: 1.35rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  object-fit: contain;
 }
 
 @media (max-width: 860px) {
@@ -334,6 +324,15 @@ h1 {
   }
 
   .footer-link-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1.25rem;
     width: 100%;
+  }
+
+  .footer-icon-group {
+    align-items: center;
   }
 }
