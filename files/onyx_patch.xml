@@ -1,0 +1,262 @@
+<?xml-stylesheet type="text/xsl" href="#FixtureReport_HTML_ONYX"?>
+<?xml-stylesheet type="text/xsl" href="FixtureReport.XML.ONYX.xslt"?>
+<Fixtures showName="SHOW 5-1-26" showBuild="69207326"><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x4'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x4'" displayName="Infinimat 1'x4' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="F308221B-4E66-4721-BE08-7BAD99BEEC59" nr="1" name="INFINIMAI 1X4 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="1"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x4'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x4'" displayName="Infinimat 1'x4' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="5588E333-4D0F-43AC-8DAD-A5D5A064C786" nr="2" name="INFINIMAI 1X4 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="16"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x4'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x4'" displayName="Infinimat 1'x4' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="AB3BADEE-6DAE-4ABF-904A-9520E99CC9AF" nr="3" name="INFINIMAI 1X4 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="31"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="3F4C400A-47C4-4A02-98E2-38F9B6F6ABC5" nr="10" name="INFINIMAT 1X2 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="46"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="29AD0434-9A65-40CA-8047-A3E854BEF5FB" nr="11" name="INFINIMAT 1X2 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="61"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="8AEE8C0D-5458-4B89-BF6C-2537859ACFAF" nr="12" name="INFINIMAT 1X2 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="76"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="D905C59C-ED05-4334-912B-2D3CE45FA562" nr="13" name="INFINIMAT 1X2 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="91"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="96DA14FA-3124-455A-9DC1-8F318577C841" nr="14" name="INFINIMAT 1X2 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="106"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="F7F15690-4B9E-431E-B279-6A1B7C3648D6" nr="15" name="INFINIMAT 1X2 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="121"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinimat 1'x2'/15_ CCT + RGB 16-Bit Function Conf.=false.xml" manufacturer="Aputure" model="Infinimat 1'x2'" displayName="Infinimat 1'x2' 15: CCT + RGB 16-Bit Function Conf.=false" cntChannels="15" ID="74C05687-A09B-452E-B7C3-6A07B1A3B207" nr="16" name="INFINIMAT 1X2 7" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="136"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="805560A7-4187-41F3-8197-6331CC366E3F" nr="20" name="STORM 80C 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="151"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="54B3E798-4318-4E62-9ED9-16567DCF5DC7" nr="21" name="STORM 80C 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="165"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="32E2285E-1CAD-4CE9-9DF3-FB78F8CD5863" nr="22" name="STORM 80C 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="179"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="C249EAAA-A468-404D-BBE0-1D6D26A20AA1" nr="23" name="STORM 80C 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="193"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="F85BC10B-3524-4D5D-B0E3-06E303F80F4B" nr="24" name="STORM 80C 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="207"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="614AB39F-38B5-47CB-B7E6-509DA7970DA6" nr="25" name="STORM 80C 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="221"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Storm 80c/2_ CCT + RGB - 16 Bit.xml" manufacturer="Aputure" model="Storm 80c" displayName="Storm 80c 2: CCT + RGB - 16 Bit" cntChannels="14" ID="651F3416-4E4A-4BDD-AE56-CF05075358F0" nr="26" name="STORM 80C 7" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="235"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="A8CAFC14-6F45-4623-80DE-DBBD383249A3" nr="30" name="INFINI BAR PB12 4' 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="EC1A0433-EBA9-4CFC-9DD0-3193758ADD92" nr="1" name="Group 1"/><Part cntChannels="7" ID="753038A5-3432-42E3-BA99-E659A553F5BD" nr="2" name="Group 2"/><Part cntChannels="7" ID="9214B462-EA52-461D-BBD2-03BA6444F274" nr="3" name="Group 3"/><Part cntChannels="7" ID="B7F281F8-D17A-4359-8D18-17E7FAC24C09" nr="4" name="Group 4"/><Part cntChannels="7" ID="5ACFFA57-1DF2-4D66-87EE-FE68DFE7FC4B" nr="5" name="Group 5"/><Part cntChannels="7" ID="5C87A252-DCF9-4872-A8DD-68F617D76ED3" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="1"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="60C9C4A9-380A-4A70-A1A3-2A6EA61636F9" nr="31" name="INFINI BAR PB12 4' 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="BC34676A-32E9-4A37-966E-8CB2E581BD7A" nr="1" name="Group 1"/><Part cntChannels="7" ID="4FA28C79-3B22-4B2E-9043-D543CE4189B9" nr="2" name="Group 2"/><Part cntChannels="7" ID="448DE972-D9F7-442F-B015-6D9E0C7760A9" nr="3" name="Group 3"/><Part cntChannels="7" ID="C43E6DF7-8997-48FD-9943-EC8BDAA647E4" nr="4" name="Group 4"/><Part cntChannels="7" ID="F7B9ADC7-6BF8-4045-B52D-F77927BF32FB" nr="5" name="Group 5"/><Part cntChannels="7" ID="A68C4805-C229-4F39-ABB1-7CDC01618F29" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="43"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="9AED329C-CACE-410B-B8D8-A42C31BAA8A0" nr="32" name="INFINI BAR PB12 4' 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="A4221B84-737D-4E83-B336-91A231184237" nr="1" name="Group 1"/><Part cntChannels="7" ID="0BB5A507-B013-4D4A-BE83-CBB48B92A124" nr="2" name="Group 2"/><Part cntChannels="7" ID="4A0BC760-C233-4975-8E27-8FB380FB7603" nr="3" name="Group 3"/><Part cntChannels="7" ID="7969E73E-E556-4288-B14A-6FF39B562CF2" nr="4" name="Group 4"/><Part cntChannels="7" ID="FF130A0A-9BF7-4731-931A-B88BCA950F75" nr="5" name="Group 5"/><Part cntChannels="7" ID="639B86C5-EAA2-4E90-BD1C-E7635EE75057" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="85"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="F61EF8C6-D133-482D-8E5A-A42C72910C6F" nr="33" name="INFINI BAR PB12 4' 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="29BBDEE6-2EAF-4FC4-8038-05DE562FF882" nr="1" name="Group 1"/><Part cntChannels="7" ID="982290E9-6CE8-430D-99D3-58C4D47B2271" nr="2" name="Group 2"/><Part cntChannels="7" ID="1439A6C5-AFE3-4FA5-B601-D4DCC6B1FD9F" nr="3" name="Group 3"/><Part cntChannels="7" ID="FA4079C1-3B3C-4705-95D0-FCAF778E9C73" nr="4" name="Group 4"/><Part cntChannels="7" ID="9C796BFB-258A-44CD-8B28-C569CA1BA40D" nr="5" name="Group 5"/><Part cntChannels="7" ID="C26A10F1-3B27-4D19-B16E-E974B919E57C" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="127"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="5051E485-623F-485F-853B-CF13E95105CD" nr="34" name="INFINI BAR PB12 4' 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="57641376-C6BE-43C1-A194-E2F87B4AD205" nr="1" name="Group 1"/><Part cntChannels="7" ID="7CB64500-D16D-4E5B-A6A5-C8E3E82F53A3" nr="2" name="Group 2"/><Part cntChannels="7" ID="A29A9164-289B-40E3-8277-4C97A7836085" nr="3" name="Group 3"/><Part cntChannels="7" ID="2A1273BC-3CC8-4018-99A6-D3AE5523A6AC" nr="4" name="Group 4"/><Part cntChannels="7" ID="3BBACDB6-6F50-428F-984E-B1626B7951C3" nr="5" name="Group 5"/><Part cntChannels="7" ID="8C16AAF3-E5ED-4A75-AA89-3F74AB7611AA" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="169"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="39E6ACC3-9BD0-4C1E-BFAE-F28E0A215CEF" nr="35" name="INFINI BAR PB12 4' 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="343954DF-3F4A-4BCA-8771-96DFC9362F18" nr="1" name="Group 1"/><Part cntChannels="7" ID="A8C3539D-F51D-4EBC-B613-D5419BA14E7D" nr="2" name="Group 2"/><Part cntChannels="7" ID="27A09EEE-1F25-4D11-B9B5-716E97CFB187" nr="3" name="Group 3"/><Part cntChannels="7" ID="328DD80D-7822-4E50-8E60-17014865A636" nr="4" name="Group 4"/><Part cntChannels="7" ID="E3997160-E5E6-4B87-A8C3-5CDD90E8FAC4" nr="5" name="Group 5"/><Part cntChannels="7" ID="343ADAA1-690A-4AA4-8304-397205A4C5A8" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="211"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="332F1D95-A7D1-48A8-9BBF-E1441C71E0F9" nr="36" name="INFINI BAR PB12 4' 7" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="B884B993-81F5-4C2B-BAA7-CBF358CFE492" nr="1" name="Group 1"/><Part cntChannels="7" ID="8DDC7D5B-8A3E-4A53-8B97-11B6E3543B4F" nr="2" name="Group 2"/><Part cntChannels="7" ID="57CB2AAB-313C-4EC4-8785-98493FEE1C97" nr="3" name="Group 3"/><Part cntChannels="7" ID="870C8A55-21C1-4AE3-ADEF-24EA7F04D511" nr="4" name="Group 4"/><Part cntChannels="7" ID="70A98DE6-A1FE-49AB-BB10-77C1D5C6CD3B" nr="5" name="Group 5"/><Part cntChannels="7" ID="FA131BB9-C7E6-4FCD-A8BF-9C44CCA733D1" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="253"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB12/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB12" displayName="Infinibar PB12 10: CCT+RGB 6 Pixels" cntChannels="42" ID="B19430EA-D8C8-4E5B-A649-37D3BF8C3D33" nr="37" name="INFINI BAR PB12 4' 8" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="35A88DB9-47BA-4340-8BC4-09BFAABC4FF3" nr="1" name="Group 1"/><Part cntChannels="7" ID="EFE06154-FB7B-4A0E-A1B9-39D1D1B18173" nr="2" name="Group 2"/><Part cntChannels="7" ID="3FF7F312-0C86-4497-850E-9CBDE435706D" nr="3" name="Group 3"/><Part cntChannels="7" ID="C69D69D3-F2A9-4E79-8CB4-E8D8CD12B1A4" nr="4" name="Group 4"/><Part cntChannels="7" ID="A6089F7D-508A-4695-BEC4-75B897530C7D" nr="5" name="Group 5"/><Part cntChannels="7" ID="83B43186-5932-40BD-BF4F-420CBF518ECC" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="295"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB6/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB6" displayName="Infinibar PB6 10: CCT+RGB 6 Pixels" cntChannels="42" ID="3E8997D9-B6B3-4A26-84AC-2DE699DC34C0" nr="40" name="INFINI BAR PB6 2' 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="BA31AB36-D86A-4BA2-B60A-A582BC2F070B" nr="1" name="Group 1"/><Part cntChannels="7" ID="98926A30-3467-424A-B9CB-7F7C236DB4DE" nr="2" name="Group 2"/><Part cntChannels="7" ID="45D592B7-EC04-4508-A776-570DC0CF40B4" nr="3" name="Group 3"/><Part cntChannels="7" ID="BC003B3D-FFDA-4C6D-A480-265EBE96A963" nr="4" name="Group 4"/><Part cntChannels="7" ID="E3B70F02-4A1E-4034-BBF6-98C5DB5AB049" nr="5" name="Group 5"/><Part cntChannels="7" ID="C9AFF513-06D9-4CDC-AB00-9E43DE86BC0F" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="337"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB6/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB6" displayName="Infinibar PB6 10: CCT+RGB 6 Pixels" cntChannels="42" ID="CB225BF1-8170-4844-94A2-E84879BC79D9" nr="41" name="INFINI BAR PB6 2' 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="F17DF5E4-1883-4981-8F7A-3B51F7A70600" nr="1" name="Group 1"/><Part cntChannels="7" ID="AF6BE611-4E3E-4DC4-8EA7-81FB64DC2DAD" nr="2" name="Group 2"/><Part cntChannels="7" ID="CE440A1E-6F74-4891-A5EB-F15709FCFDD4" nr="3" name="Group 3"/><Part cntChannels="7" ID="102F9B82-2D92-4E1D-A893-4D972A4E114E" nr="4" name="Group 4"/><Part cntChannels="7" ID="94C87DF9-DCC6-41E8-8B16-1CD96CE51199" nr="5" name="Group 5"/><Part cntChannels="7" ID="A9CC257D-E1D8-44D0-99AB-303FD7585F86" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="379"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB6/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB6" displayName="Infinibar PB6 10: CCT+RGB 6 Pixels" cntChannels="42" ID="C0FABCFA-56B0-4F31-874A-53600398DE51" nr="42" name="INFINI BAR PB6 2' 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="D81EF8A8-85D9-4192-9422-DE4500E0AA0E" nr="1" name="Group 1"/><Part cntChannels="7" ID="BB44A9AD-E382-4F29-B170-6AD7935B4EBD" nr="2" name="Group 2"/><Part cntChannels="7" ID="70CD50A8-8AD2-470A-9EC3-6924C35744B9" nr="3" name="Group 3"/><Part cntChannels="7" ID="0D0B78D6-5FD2-44AE-8705-19D078328E9F" nr="4" name="Group 4"/><Part cntChannels="7" ID="CE207FD8-8BCF-4D66-82E4-51578C9209DF" nr="5" name="Group 5"/><Part cntChannels="7" ID="93C80C9C-FB2E-494D-89C9-4A8CBC48894C" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="421"/></Fixture><Fixture moniker="ABFixtureType4:Aputure/Infinibar PB6/10_ CCT+RGB 6 Pixels.xml" manufacturer="Aputure" model="Infinibar PB6" displayName="Infinibar PB6 10: CCT+RGB 6 Pixels" cntChannels="42" ID="DBF0F134-2753-41B1-BA86-1AB112DEB5A4" nr="43" name="INFINI BAR PB6 2' 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="7" ID="5CE72B10-C770-4429-941C-9B05575EC426" nr="1" name="Group 1"/><Part cntChannels="7" ID="2919AF55-9462-4387-9587-3E061A81D333" nr="2" name="Group 2"/><Part cntChannels="7" ID="ADEDDDE5-E28D-4B8E-B4C7-F309E3BD9EAA" nr="3" name="Group 3"/><Part cntChannels="7" ID="6012A222-63E8-412E-8457-9A2CEF434716" nr="4" name="Group 4"/><Part cntChannels="7" ID="C931BB1F-BB97-4CD5-87E0-FF58A2AF842C" nr="5" name="Group 5"/><Part cntChannels="7" ID="8BE20ECD-EDB8-41E5-BD3D-BF2C92DA6654" nr="6" name="Group 6"/><DMXChannel universe="2" startAddress="463"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="B9964E3E-3D84-4489-8728-7BA02DD87FAF" nr="50" name="ENCORE LP15IP 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="2DC1EF4A-AAFA-405F-8178-5FD85182D680" nr="1" name="ENCORE LP15IP 2"/><Part cntChannels="8" ID="F23D2B2D-6FB8-4627-A622-CE239936EE4C" nr="2" name="ENCORE LP15IP 3"/><Part cntChannels="8" ID="9856367E-80F4-4669-8196-37978ED7F79A" nr="3" name="ENCORE LP15IP 4"/><Part cntChannels="8" ID="A3323F07-6924-491E-8E02-049008F89B0C" nr="4" name="ENCORE LP15IP 5"/><Part cntChannels="8" ID="C71F5766-94B1-4006-825E-67E60BD9C7DA" nr="5" name="ENCORE LP15IP 6"/><Part cntChannels="8" ID="E743E9D6-C8F3-461B-B30C-997206697C94" nr="6" name="ENCORE LP15IP 7"/><Part cntChannels="8" ID="FB11059E-18FF-45B3-A998-4B555EC604EC" nr="7" name="ENCORE LP15IP 8"/><Part cntChannels="8" ID="BD4B4635-8CE7-48CB-BE2A-032D362EB46C" nr="8" name="ENCORE LP15IP 9"/><Part cntChannels="8" ID="54D4FA92-A667-4351-B1C2-A2A26B033C0B" nr="9" name="ENCORE LP15IP 10"/><Part cntChannels="8" ID="EEB4964A-89AF-4B68-BD08-8D83AA49CA98" nr="10" name="ENCORE LP15IP 11"/><Part cntChannels="8" ID="07526EF9-1A1C-4ADF-AB43-6812ED48969F" nr="11" name="ENCORE LP15IP 12"/><Part cntChannels="8" ID="1BAA0039-9616-46AB-853E-224645DCF039" nr="12" name="ENCORE LP15IP 13"/><Part cntChannels="8" ID="ABA33831-DE3E-4B99-8F9D-3F98028EC230" nr="13" name="ENCORE LP15IP 14"/><Part cntChannels="8" ID="71EBEFAD-5BA9-4FA1-937B-91D1576B0192" nr="14" name="ENCORE LP15IP 15"/><Part cntChannels="8" ID="2E648AF5-A528-4B90-893B-76C9785BB8E5" nr="15" name="ENCORE LP15IP 16"/><DMXChannel universe="3" startAddress="1"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="85F35861-B6A1-4041-9FA8-0C79B492BF16" nr="51" name="ENCORE LP15 IP 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="E2B7B316-145A-4DC2-89B7-C2BDB7439B42" nr="1" name="Group 1"/><Part cntChannels="8" ID="F5B237B8-D3D9-47C3-AE8B-3097F46F95A8" nr="2" name="Group 2"/><Part cntChannels="8" ID="76A63C67-A195-46E8-A394-3D2FF2D96C84" nr="3" name="Group 3"/><Part cntChannels="8" ID="7839B1D5-48CA-4F95-A959-6F6F745FC25D" nr="4" name="Group 4"/><Part cntChannels="8" ID="B6D1C35F-4602-4C53-B04F-F534DAB8F569" nr="5" name="Group 5"/><Part cntChannels="8" ID="B8BF0BB0-2A7A-4DE5-A346-C6465B69D90C" nr="6" name="Group 6"/><Part cntChannels="8" ID="39C335E5-6C98-4D5B-B0DA-A26B22604104" nr="7" name="Group 7"/><Part cntChannels="8" ID="6C263ED9-F7D6-49FF-817E-E61D12DF7B77" nr="8" name="Group 8"/><Part cntChannels="8" ID="F8804419-A790-44AE-9CBD-F5DA6CFB3A30" nr="9" name="Group 9"/><Part cntChannels="8" ID="1AA8D63E-8BDF-4105-B9D3-9A40BCC92C4F" nr="10" name="Group 10"/><Part cntChannels="8" ID="B5149E7D-B73B-4ACF-9A1D-45875B414D9C" nr="11" name="Group 11"/><Part cntChannels="8" ID="DE49D555-0004-4815-B69B-64DD00F52337" nr="12" name="Group 12"/><Part cntChannels="8" ID="A35D3DA8-F675-4C71-AD34-30F715740112" nr="13" name="Group 13"/><Part cntChannels="8" ID="1A09B370-EB8E-4BA2-9944-C2F38C3BDDC3" nr="14" name="Group 14"/><Part cntChannels="8" ID="035C0922-FA08-42E6-978B-8BF1052B25A9" nr="15" name="Group 15"/><DMXChannel universe="3" startAddress="121"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="BAF8EE57-C107-4219-B35E-C300B533FB06" nr="52" name="ENCORE LB5 IP 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="8D5C210B-4976-4067-8C43-331458BBAFFC" nr="1" name="Group 1"/><Part cntChannels="8" ID="1DFBB87C-0D53-4CFA-A344-DE3BEE6C50A5" nr="2" name="Group 2"/><Part cntChannels="8" ID="8B8BF995-105F-4D21-BC10-B6AE8F8D93D3" nr="3" name="Group 3"/><Part cntChannels="8" ID="2B601CA2-BBBF-4E91-98A9-89C466FF2944" nr="4" name="Group 4"/><Part cntChannels="8" ID="CD0A878D-2827-42A6-9374-4C7884A29BA3" nr="5" name="Group 5"/><Part cntChannels="8" ID="64BE762C-71FF-45CA-9BB5-CAF071B23AE7" nr="6" name="Group 6"/><Part cntChannels="8" ID="6913FA52-DBE8-4EEE-B2AB-7E768CF74F90" nr="7" name="Group 7"/><Part cntChannels="8" ID="E45F91E6-A54F-4E89-8CCB-3381F657BB5C" nr="8" name="Group 8"/><Part cntChannels="8" ID="DCF13482-1EFD-4B8B-B70D-60588F3BE828" nr="9" name="Group 9"/><Part cntChannels="8" ID="DCC95EF3-CCDD-4315-9CE4-5F7A60B506DC" nr="10" name="Group 10"/><Part cntChannels="8" ID="6118491C-D576-4A39-8155-F42A86922F95" nr="11" name="Group 11"/><Part cntChannels="8" ID="3CD86230-9070-461A-89BF-AA9837E7B8F8" nr="12" name="Group 12"/><Part cntChannels="8" ID="58B1CD50-34A3-4CA5-B490-712328E3BA6F" nr="13" name="Group 13"/><Part cntChannels="8" ID="4478F79B-BF9A-4F8E-BCFA-DC9A7521FF45" nr="14" name="Group 14"/><Part cntChannels="8" ID="3FC80434-313F-4E0A-9CD7-A131DB3DB392" nr="15" name="Group 15"/><DMXChannel universe="3" startAddress="241"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="F517A960-C295-473C-8F3A-33FF394B7AE4" nr="53" name="ENCORE LB5 IP 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="F0C84152-A142-47FA-85F6-F6568DE8D0C2" nr="1" name="Group 1"/><Part cntChannels="8" ID="AAB09372-267E-43BA-BB9D-300D2D6824AC" nr="2" name="Group 2"/><Part cntChannels="8" ID="827AB88E-8BC6-4645-88F8-E2E0F2B25E13" nr="3" name="Group 3"/><Part cntChannels="8" ID="528C8825-4164-42AF-A783-D7E6352B8E67" nr="4" name="Group 4"/><Part cntChannels="8" ID="D54801EF-451F-4E4B-90A9-00B508EC7E92" nr="5" name="Group 5"/><Part cntChannels="8" ID="EB8E7F11-DC09-49E3-B410-0AB8B909BD81" nr="6" name="Group 6"/><Part cntChannels="8" ID="70246407-6307-41D6-BC11-B384D8285B16" nr="7" name="Group 7"/><Part cntChannels="8" ID="5590BF55-E535-47F4-91B5-29A3431E03FA" nr="8" name="Group 8"/><Part cntChannels="8" ID="377281AE-0269-4A6B-A522-5331B89CA110" nr="9" name="Group 9"/><Part cntChannels="8" ID="3B083F7C-C3DC-4D33-94A0-4575675BAF4C" nr="10" name="Group 10"/><Part cntChannels="8" ID="2BC0C833-698B-43DF-B108-20074EFDFAD3" nr="11" name="Group 11"/><Part cntChannels="8" ID="719AACEA-54DB-4660-965D-AFD3F941733D" nr="12" name="Group 12"/><Part cntChannels="8" ID="0C017DA4-24EF-4FF6-A77F-9B64988C419C" nr="13" name="Group 13"/><Part cntChannels="8" ID="B9B47977-D889-4DF4-A09D-D1F1375DDFFD" nr="14" name="Group 14"/><Part cntChannels="8" ID="EE3701EE-ACFE-4A08-BD3E-0E13EC2A659B" nr="15" name="Group 15"/><DMXChannel universe="3" startAddress="361"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="F6546427-53CA-464A-8701-FD174C4CEA90" nr="54" name="ENCORE LB5 IP 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="3D36ED9C-CE11-4390-8191-B90CB4B11B26" nr="1" name="Group 1"/><Part cntChannels="8" ID="464B9201-BD0B-4B4F-A7A2-80FE9A822AA6" nr="2" name="Group 2"/><Part cntChannels="8" ID="1EC16817-C054-4E10-8D3E-3CD21FB93F73" nr="3" name="Group 3"/><Part cntChannels="8" ID="493B37C6-93EB-4585-AC20-5FEDB6C0EA26" nr="4" name="Group 4"/><Part cntChannels="8" ID="39E9339D-AE70-49FF-9474-DA90C5D25B33" nr="5" name="Group 5"/><Part cntChannels="8" ID="79853DD7-6628-4B9B-BF3A-490584ECEAF9" nr="6" name="Group 6"/><Part cntChannels="8" ID="C8DBADC0-2126-40A5-8005-7A13B3B84E21" nr="7" name="Group 7"/><Part cntChannels="8" ID="E8EE56FC-7AEF-4D8B-91A0-9A5EF4A65311" nr="8" name="Group 8"/><Part cntChannels="8" ID="24308F59-F020-4531-AA7C-43AE7B35E42E" nr="9" name="Group 9"/><Part cntChannels="8" ID="508AB325-4DA0-4BDB-8B53-82A362AAD52A" nr="10" name="Group 10"/><Part cntChannels="8" ID="E867F1FB-0812-4832-B77B-18085CCB7B52" nr="11" name="Group 11"/><Part cntChannels="8" ID="557CEA64-C509-4F69-9C35-89F02DE4380E" nr="12" name="Group 12"/><Part cntChannels="8" ID="43352C2B-4D4A-4887-9C1D-D8960061A458" nr="13" name="Group 13"/><Part cntChannels="8" ID="72CB0C08-0585-4ADF-8262-7E468E57E288" nr="14" name="Group 14"/><Part cntChannels="8" ID="10455242-9146-4327-B548-168790A9E7CA" nr="15" name="Group 15"/><DMXChannel universe="4" startAddress="1"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore LB15IP/120 Channel.xml?VirtualIntensity" manufacturer="ADJ" model="Encore LB15IP" displayName="Encore LB15IP 120 Channel (d)" cntChannels="120" ID="FD62CCBD-345C-4A36-BC78-679415A9BCC4" nr="55" name="ENCORE LB5 IP 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><Part cntChannels="8" ID="7319497A-A4A1-4D5C-B24A-54538AECD147" nr="1" name="Group 1"/><Part cntChannels="8" ID="6D4FD2BC-0477-4C2E-AF3B-E2FEFAF09087" nr="2" name="Group 2"/><Part cntChannels="8" ID="ABDBF589-B98B-4ED2-A7F9-50DEAE991A24" nr="3" name="Group 3"/><Part cntChannels="8" ID="BD583E3A-6C0F-4F1F-872B-3C0917631AFB" nr="4" name="Group 4"/><Part cntChannels="8" ID="B41C6DF2-38E4-47B6-B359-C1E1C97CED3A" nr="5" name="Group 5"/><Part cntChannels="8" ID="B42F97D7-07F6-4F67-98B2-BEAF7BEA857D" nr="6" name="Group 6"/><Part cntChannels="8" ID="1173B8FB-F39F-470A-BA9C-855BD0B856DA" nr="7" name="Group 7"/><Part cntChannels="8" ID="DF60956A-FEB5-4DE9-8EE7-AC14F2D60AEF" nr="8" name="Group 8"/><Part cntChannels="8" ID="81BDF6DA-19DB-449A-A0F5-EA630EAAB6B2" nr="9" name="Group 9"/><Part cntChannels="8" ID="F05CAD13-9D43-43EE-BF6E-92A9738ABA82" nr="10" name="Group 10"/><Part cntChannels="8" ID="36BDD1FD-7C66-4756-B74F-B599A74364D1" nr="11" name="Group 11"/><Part cntChannels="8" ID="897CE5AA-8A6E-4075-9E35-B388E9304C5A" nr="12" name="Group 12"/><Part cntChannels="8" ID="3D2FEE3C-DA33-4BB1-A80F-3862B5BE8F44" nr="13" name="Group 13"/><Part cntChannels="8" ID="69CC1315-B950-430D-A09A-471DA97709B2" nr="14" name="Group 14"/><Part cntChannels="8" ID="DBFE7DE7-2365-46D9-AD5B-9E45356044EF" nr="15" name="Group 15"/><DMXChannel universe="4" startAddress="121"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="060481F8-6FD2-4210-9411-75B77D52D6C2" nr="70" name="ENCORE Z7LP 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="249"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="91C3B948-402F-4772-A8F9-83828BEAD5D1" nr="71" name="ENCORE Z7LP 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="267"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="E6C7CE16-C47B-44E4-A0FC-1749196536D1" nr="72" name="ENCORE Z7LP 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="285"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="82629A79-C76A-4091-ADC8-A412BB929EA7" nr="73" name="ENCORE Z7LP 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="303"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="D6398A98-8C69-4E66-8A86-DB6608BF99FF" nr="74" name="ENCORE Z7LP 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="321"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Encore Z7LP/18 Channel.xml" manufacturer="ADJ" model="Encore Z7LP" displayName="Encore Z7LP 18 Channel" cntChannels="18" ID="70A98834-AE84-40D0-AAC1-7D3A7B4D4061" nr="75" name="ENCORE Z7LP 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="339"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="C6C7FD66-9B95-42F7-9A8A-DE1AF57D399A" nr="80" name="SABER SPOT 1" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="357"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="CC625371-DCC7-4923-95A6-F54CAB1FE47B" nr="81" name="SABER SPOT 2" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="362"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="5FE1AF12-AA09-45D8-A714-4FD70E78D678" nr="82" name="SABER SPOT 3" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="367"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="D74EB7BE-1CAE-4795-900D-6752AB08F2B4" nr="83" name="SABER SPOT 4" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="372"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="AD0DF609-80C7-4009-B41B-3189F63CD225" nr="84" name="SABER SPOT 5" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="377"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="0459A1CF-310F-4E29-9FF8-64C6D445C219" nr="85" name="SABER SPOT 6" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="382"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="31666FAC-7EFB-4796-8392-96E08B3D3702" nr="86" name="SABER SPOT 7" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="387"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="DD8D2293-3711-408F-BDEB-7860DF4C9C35" nr="87" name="SABER SPOT 8" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="392"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="7F9E2CCF-37BA-4967-AF73-EA0B713FFE37" nr="88" name="SABER SPOT 9" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="397"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="509D72E4-6CE8-4AE3-9882-E034293C57A5" nr="89" name="SABER SPOT 10" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="402"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="36351EE8-53E2-4B72-951E-377AB83090DD" nr="90" name="SABER SPOT 11" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="407"/></Fixture><Fixture moniker="ABFixtureType4:ADJ/Saber Spot RGBL/5 Channel.xml" manufacturer="ADJ" model="Saber Spot RGBL" displayName="Saber Spot RGBL 5 Channel" cntChannels="5" ID="630834D9-11F6-4E4A-9120-6E3E7EE37FCE" nr="91" name="SABER SPOT 12" patchState="1" cntAllocations="1" totalAllocations="1" totalMultiPatches="0"><DMXChannel universe="1" startAddress="412"/></Fixture><xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" id="FixtureReport_HTML_ONYX" xml:id="FixtureReport_HTML_ONYX">
+		<xsl:output method="html" version="3.2" encoding="UTF-8" indent="yes"/>
+		<xsl:template match="/">
+			<xsl:element name="html">
+				<xsl:element name="head">
+					<xsl:element name="link">
+						<xsl:attribute name="rel">stylesheet</xsl:attribute>
+						<xsl:attribute name="type">text/css</xsl:attribute>
+						<xsl:attribute name="href">FixtureReport.ONYX.css</xsl:attribute>
+					</xsl:element>
+					<xsl:element name="title">
+					"<xsl:value-of select="Fixtures/@showName"/>" - ONYX Patch Summary
+				</xsl:element>
+				</xsl:element>
+				<xsl:element name="body">
+					<xsl:element name="h1">
+					"<xsl:value-of select="Fixtures/@showName"/>" - ONYX Patch Summary
+				</xsl:element>
+					<xsl:element name="p">
+						<xsl:attribute name="class">body</xsl:attribute>
+					This is a summary of the patch for show "<xsl:value-of select="Fixtures/@showName"/>"
+					<xsl:element name="b">
+						(requires software build
+						<xsl:if test="Fixtures/@showBuild &gt; 65535">
+								<xsl:value-of select="(Fixtures/@showBuild - (Fixtures/@showBuild mod 16777216)) div 16777216"/>
+								<xsl:text>.</xsl:text>
+								<xsl:value-of select="((Fixtures/@showBuild - (Fixtures/@showBuild mod 65536)) div 65536) mod 256"/>
+								<xsl:text>.</xsl:text>
+							</xsl:if>
+							<xsl:value-of select="Fixtures/@showBuild mod 65536"/><xsl:text>)</xsl:text>
+						</xsl:element>
+						<xsl:text>.</xsl:text>
+					</xsl:element>
+					<xsl:apply-templates select="@* | node()"/>
+					<!--
+				<xsl:element name="p">
+					<xsl:attribute name="class">body</xsl:attribute>
+					Page last updated: <xsl:value-of select="Manufacturers/@time"/> CET
+				</xsl:element>
+-->
+				</xsl:element>
+			</xsl:element>
+		</xsl:template>
+		<xsl:template match="Fixtures">
+			<xsl:element name="table">
+				<xsl:attribute name="class">table</xsl:attribute>
+				<!-- <xsl:attribute name="border">1</xsl:attribute> -->
+				<xsl:element name="thead">
+					<xsl:element name="tr">
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>ID
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Name
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Manufacturer
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Model &amp; personality
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Universe
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Address
+					</xsl:element>
+						<xsl:element name="th">
+							<xsl:attribute name="class">header</xsl:attribute>Invert
+					</xsl:element>
+					</xsl:element>
+					<xsl:apply-templates select="Fixture"/>
+				</xsl:element>
+			</xsl:element>
+		</xsl:template>
+		<xsl:template match="Fixture">
+			<xsl:variable name="fixtureClass">
+				<xsl:choose>
+					<xsl:when test="(position() mod 2) = 1">bodyOdd</xsl:when>
+					<xsl:otherwise>bodyEven</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:element name="tbody">
+				<xsl:element name="tr">
+					<xsl:element name="td">
+						<xsl:attribute name="class">
+							<xsl:value-of select="$fixtureClass"/>
+						</xsl:attribute>
+						<xsl:attribute name="ALIGN">RIGHT</xsl:attribute>
+						<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+						<xsl:attribute name="rowspan">
+							<xsl:value-of select="count(Part) + 1 + number(@totalMultiPatches)"/>
+						</xsl:attribute>
+						<xsl:element name="b">
+							<xsl:value-of select="@nr"/>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="td">
+						<xsl:attribute name="class">
+							<xsl:value-of select="$fixtureClass"/>
+						</xsl:attribute>
+						<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+						<xsl:attribute name="rowspan">
+							<xsl:value-of select="count(DMXChannel)"/>
+						</xsl:attribute>
+						<xsl:element name="b">
+							<xsl:value-of select="@name"/>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="td">
+						<xsl:attribute name="class">
+							<xsl:value-of select="$fixtureClass"/>
+						</xsl:attribute>
+						<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+						<xsl:attribute name="rowspan">
+							<xsl:value-of select="count(DMXChannel)"/>
+						</xsl:attribute>
+						<xsl:value-of select="@manufacturer"/>
+					</xsl:element>
+					<xsl:element name="td">
+						<xsl:attribute name="class">
+							<xsl:value-of select="$fixtureClass"/>
+						</xsl:attribute>
+						<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+						<xsl:attribute name="rowspan">
+							<xsl:value-of select="count(DMXChannel)"/>
+						</xsl:attribute>
+						<xsl:value-of select="@displayName"/>
+					</xsl:element>
+					<xsl:apply-templates select="DMXChannel[1]">
+						<xsl:with-param name="fixtureClass" select="$fixtureClass"/>
+					</xsl:apply-templates>
+					<xsl:for-each select="DMXChannel[position() &gt; 1]">
+						<xsl:element name="tr">
+							<xsl:apply-templates select=".">
+								<xsl:with-param name="fixtureClass" select="$fixtureClass"/>
+							</xsl:apply-templates>
+						</xsl:element>
+					</xsl:for-each>
+					<xsl:for-each select="Part">
+						<xsl:if test="./DMXChannel">
+							<xsl:element name="tr">
+								<xsl:apply-templates select=".">
+									<xsl:with-param name="fixtureClass" select="$fixtureClass"/>
+								</xsl:apply-templates>
+							</xsl:element>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:element>
+			</xsl:element>
+		</xsl:template>
+		<xsl:template match="Part">
+			<xsl:param name="fixtureClass"/>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+				<xsl:attribute name="rowspan">
+					<xsl:value-of select="count(DMXChannel)"/>
+				</xsl:attribute>
+				<xsl:element name="b">
+				.<xsl:value-of select="@nr"/>
+				</xsl:element> : <xsl:value-of select="@name"/>
+			</xsl:element>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+				<xsl:attribute name="rowspan">
+					<xsl:value-of select="count(DMXChannel)"/>
+				</xsl:attribute>
+				<xsl:value-of select="ancestor::Fixture/@manufacturer"/>
+			</xsl:element>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+				<xsl:attribute name="rowspan">
+					<xsl:value-of select="count(DMXChannel)"/>
+				</xsl:attribute>
+				<xsl:value-of select="ancestor::Fixture/@displayName"/>
+			</xsl:element>
+			<xsl:choose>
+				<xsl:when test="DMXChannel">
+					<xsl:apply-templates select="DMXChannel[1]">
+						<xsl:with-param name="fixtureClass" select="$fixtureClass"/>
+					</xsl:apply-templates>
+					<xsl:for-each select="DMXChannel[position() &gt; 1]">
+						<xsl:element name="tr">
+							<xsl:apply-templates select=".">
+								<xsl:with-param name="fixtureClass" select="$fixtureClass"/>
+							</xsl:apply-templates>
+						</xsl:element>
+					</xsl:for-each>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:if test="parent::Fixture/DMXChannel">
+						<xsl:element name="td">
+							<xsl:attribute name="class">
+								<xsl:value-of select="$fixtureClass"/>
+							</xsl:attribute>
+							<xsl:attribute name="ALIGN">RIGHT</xsl:attribute>
+						Auto
+					</xsl:element>
+						<xsl:element name="td">
+							<xsl:attribute name="class">
+								<xsl:value-of select="$fixtureClass"/>
+							</xsl:attribute>
+							<xsl:attribute name="ALIGN">RIGHT</xsl:attribute>
+						Auto
+					</xsl:element>
+					</xsl:if>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:template>
+		<xsl:template match="DMXChannel">
+			<xsl:param name="fixtureClass"/>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="ALIGN">RIGHT</xsl:attribute>
+				<xsl:choose>
+					<xsl:when test="@universe and @universe != 0">
+						<xsl:value-of select="@universe"/>
+					</xsl:when>
+					<xsl:otherwise>
+					Auto
+				</xsl:otherwise>
+				</xsl:choose>
+			</xsl:element>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="ALIGN">RIGHT</xsl:attribute>
+				<xsl:choose>
+					<xsl:when test="@startAddress and @startAddress != 0">
+						<xsl:value-of select="@startAddress"/>
+					</xsl:when>
+					<xsl:otherwise>
+					Auto
+				</xsl:otherwise>
+				</xsl:choose>
+			</xsl:element>
+			<xsl:element name="td">
+				<xsl:attribute name="class">
+					<xsl:value-of select="$fixtureClass"/>
+				</xsl:attribute>
+				<xsl:attribute name="ALIGN">CENTER</xsl:attribute>
+				<xsl:attribute name="VALIGN">TOP</xsl:attribute>
+				<xsl:if test="@panInverted and @panInverted != 0">P</xsl:if>
+				<xsl:if test="@tiltInverted and @tiltInverted != 0">T</xsl:if>
+				<xsl:if test="@panTiltSwapped and @panTiltSwapped != 0">S</xsl:if>
+			</xsl:element>
+		</xsl:template>
+	</xsl:stylesheet></Fixtures>
