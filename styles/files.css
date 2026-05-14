@@ -83,11 +83,11 @@ a {
   display: grid;
   gap: 0.4rem;
   margin-top: 0.4rem;
-  margin-left: 1.35rem;
+  margin-left: 2rem;
 }
 
 .file-link {
-  display: inline-block;
+  display: block;
   color: var(--link);
   font-weight: 400;
   text-decoration: underline;
