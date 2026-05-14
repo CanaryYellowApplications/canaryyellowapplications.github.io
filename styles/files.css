@@ -1,12 +1,9 @@
 :root {
   --page-bg: #f8e8ab;
-  --card: rgba(255, 251, 238, 0.84);
   --ink: #231600;
   --ink-soft: rgba(35, 22, 0, 0.74);
-  --line: rgba(35, 22, 0, 0.14);
-  --accent-deep: #8f5600;
-  --shadow: 0 26px 80px rgba(102, 66, 0, 0.16);
-  --radius: 28px;
+  --link: #0b57d0;
+  --link-hover: #0842a0;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -59,77 +56,19 @@ code {
   outline: none;
 }
 
-.hero,
 .section {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 2rem;
-  background: linear-gradient(145deg, rgba(255, 252, 242, 0.97), rgba(255, 231, 143, 0.9));
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: -5rem;
-  right: -4rem;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 999px;
-  background: rgba(255, 191, 0, 0.24);
-  filter: blur(8px);
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 1;
-}
-
-h1 {
-  margin: 0;
-  font-size: clamp(2.1rem, 4vw, 3.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
-}
-
-.lede {
-  max-width: 46rem;
-  margin: 1rem 0 0;
-  color: var(--ink-soft);
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.section {
-  margin-top: 1rem;
-  padding: 1.4rem;
-  background: var(--card);
-  backdrop-filter: blur(10px);
-}
-
-h2 {
-  margin: 0 0 1rem;
-  font-size: 1.15rem;
+  margin-top: 0.35rem;
 }
 
 .file-list {
   display: grid;
-  gap: 0.85rem;
+  gap: 1.15rem;
 }
 
 .file-row {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
-  padding: 1.1rem 1.2rem;
-  border: 1px dashed rgba(35, 22, 0, 0.18);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.44);
 }
 
 .file-copy {
@@ -166,24 +105,17 @@ h2 {
 }
 
 .file-link {
-  display: inline-flex;
+  display: inline;
   flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem 1rem;
-  border: 1px solid rgba(143, 86, 0, 0.18);
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 209, 86, 0.94), rgba(236, 168, 18, 0.96));
-  color: var(--accent-deep);
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 12px 28px rgba(143, 86, 0, 0.16);
+  color: var(--link);
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
 }
 
 .file-link:hover,
 .file-link:focus-visible {
-  text-decoration: none;
-  transform: translateY(-1px);
+  color: var(--link-hover);
   outline: none;
 }
 
@@ -230,21 +162,12 @@ h2 {
     width: min(960px, calc(100% - 1rem));
   }
 
-  .hero,
-  .section {
-    border-radius: 24px;
-  }
-
-  .hero {
-    padding: 1.5rem;
-  }
-
   .file-row {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .file-link {
-    width: 100%;
+    width: auto;
   }
 }
