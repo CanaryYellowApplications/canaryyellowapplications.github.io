@@ -127,20 +127,22 @@ h1 {
 .app-groups {
   display: grid;
   gap: 1.2rem;
-  margin-top: 1rem;
 }
 
 .app-group-title {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 1rem;
+  display: block;
+  width: 100%;
+  margin: 0 0 0.65rem;
+  color: var(--ink);
+  font-size: 1.55rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .app-group .app-list {
-  margin-top: 0.7rem;
+  margin-top: 0;
 }
 
 .app-row {
