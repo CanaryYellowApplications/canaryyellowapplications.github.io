@@ -124,6 +124,25 @@ h1 {
   margin-top: 1rem;
 }
 
+.app-groups {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.app-group-title {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-group .app-list {
+  margin-top: 0.7rem;
+}
+
 .app-row {
   display: flex;
   align-items: center;

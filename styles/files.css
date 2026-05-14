@@ -52,6 +52,14 @@ a {
   outline: none;
 }
 
+.page-title {
+  margin: 0 0 0.9rem;
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .section {
   margin-top: 0.35rem;
 }
@@ -68,14 +76,13 @@ a {
 .tree-summary {
   cursor: pointer;
   user-select: none;
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.12em;
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .tree-summary:hover,
 .tree-summary:focus-visible {
-  color: var(--link-hover);
+  color: var(--ink);
   outline: none;
 }
 
