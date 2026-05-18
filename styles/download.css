@@ -255,6 +255,11 @@ ul {
   padding-bottom: 0;
 }
 
+.footer-nav-resources {
+  flex-wrap: nowrap;
+  gap: 0.7rem;
+}
+
 .footer-link {
   font-weight: 400;
   letter-spacing: 0.01em;
