@@ -197,6 +197,23 @@ ul {
     box-shadow 140ms ease;
 }
 
+.platform-toggle-button-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.platform-toggle-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 auto;
+}
+
+.platform-toggle-icon-apple {
+  fill: currentColor;
+}
+
 .platform-toggle-button:last-child {
   border-right: 0;
 }
@@ -301,6 +318,10 @@ ul {
   .platform-toggle-button {
     flex: 1 1 0;
     padding-inline: 0.9rem;
+  }
+
+  .platform-toggle-icon {
+    display: none;
   }
 
   .panel-header {
