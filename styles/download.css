@@ -83,13 +83,9 @@ a {
   filter: blur(8px);
 }
 
-.hero-inner {
+.hero-copy {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1.5rem;
-  align-items: center;
 }
 
 h1 {
@@ -130,6 +126,11 @@ h2 {
   font-size: 1.15rem;
 }
 
+h3 {
+  margin: 1.5rem 0 0.9rem;
+  font-size: 1.05rem;
+}
+
 p,
 li {
   color: var(--ink-soft);
@@ -164,6 +165,67 @@ ul {
   margin-top: 1rem;
 }
 
+.platform-toggle {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.platform-toggle-button {
+  appearance: none;
+  border: 1px solid rgba(35, 22, 0, 0.14);
+  border-radius: 999px;
+  padding: 0.82rem 1.15rem;
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 140ms ease,
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.platform-toggle-button:hover,
+.platform-toggle-button:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  border-color: rgba(143, 86, 0, 0.28);
+  box-shadow: 0 10px 24px rgba(102, 66, 0, 0.12);
+}
+
+.platform-toggle-button.is-active {
+  background: linear-gradient(145deg, #f6bd46, #d68a00);
+  border-color: rgba(143, 86, 0, 0.34);
+  color: #fff9eb;
+  box-shadow: 0 12px 28px rgba(143, 86, 0, 0.2);
+}
+
+.platform-panel {
+  margin-top: 1rem;
+}
+
+.platform-panel[hidden] {
+  display: none;
+}
+
+.panel-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.panel-lede {
+  max-width: 42rem;
+  margin: 0;
+}
+
 .footer-nav {
   display: inline-flex;
   flex-wrap: wrap;
@@ -180,6 +242,11 @@ ul {
   color: var(--ink-soft);
   font-size: 0.9rem;
   line-height: 1;
+}
+
+.footer-nav-secondary {
+  margin-top: 1.25rem;
+  padding-bottom: 0;
 }
 
 .footer-link {
@@ -212,12 +279,12 @@ ul {
     padding: 1.5rem;
   }
 
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
   .store-badge {
     justify-self: center;
+  }
+
+  .panel-header {
+    grid-template-columns: 1fr;
   }
 
   .page {

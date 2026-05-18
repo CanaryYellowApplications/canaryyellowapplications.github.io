@@ -209,24 +209,6 @@ h1 {
   width: auto;
 }
 
-.files-link-row {
-  margin: 1.15rem 0 0;
-  text-align: center;
-}
-
-.files-link {
-  color: var(--ink-soft);
-  font-size: 0.98rem;
-  text-decoration: underline;
-  text-underline-offset: 0.14em;
-}
-
-.files-link:hover,
-.files-link:focus-visible {
-  color: var(--ink);
-  outline: none;
-}
-
 .footer-nav {
   display: inline-flex;
   flex-wrap: wrap;

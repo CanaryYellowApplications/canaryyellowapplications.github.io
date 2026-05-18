@@ -125,6 +125,11 @@ a {
   line-height: 1;
 }
 
+.footer-nav-secondary {
+  margin-top: 1.25rem;
+  padding-bottom: 0;
+}
+
 .footer-link {
   font-weight: 400;
   letter-spacing: 0.01em;
