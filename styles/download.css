@@ -71,18 +71,6 @@ a {
   background: linear-gradient(145deg, rgba(255, 252, 242, 0.97), rgba(255, 231, 143, 0.9));
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: -5rem;
-  right: -4rem;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 999px;
-  background: rgba(255, 191, 0, 0.24);
-  filter: blur(8px);
-}
-
 .hero-copy {
   position: relative;
   z-index: 1;
@@ -168,10 +156,12 @@ ul {
 .platform-toggle {
   position: relative;
   z-index: 1;
-  display: inline-flex;
+  display: flex;
   flex-wrap: nowrap;
   margin-top: 1.5rem;
   margin-inline: auto;
+  width: fit-content;
+  max-width: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -207,8 +197,9 @@ ul {
 .platform-toggle-icon {
   display: block;
   width: auto;
-  height: 0.7rem;
+  height: 0.82rem;
   flex: 0 0 auto;
+  overflow: visible;
 }
 
 .platform-toggle-icon-apple {
