@@ -1,0 +1,7 @@
+FIXTURE_NUMBER,ADDRESS,ADDRESS_FOR_LABELS,MANUFACTURER,FIXTURE_TYPE,DMX_FOOTPRINT,DESCRIPTION,MODE,LABEL,LABEL_COLOR
+1,1,1/001,Canary Yellow Applications,ScreenGlow Mobile,1,Flashlight only,1 Ch,Flashlight,#5aaa8b
+11,11-13,1/011,Canary Yellow Applications,ScreenGlow Mobile,3,RGB,3 Ch,3ch,#4338ca
+21,21-24,1/021,Canary Yellow Applications,ScreenGlow Mobile,4,RGB and flashlight,4 Ch,4ch,#c2410c
+31,31-37,1/031,Canary Yellow Applications,ScreenGlow Mobile,7,Dim, CCT, Tint, Crossfade, and RGB,7 Ch,7Ch,#fde047
+41,41-48,1/041,Canary Yellow Applications,ScreenGlow Mobile,8,Dim, CCT, Tint, Crossfade, RGB, and flashlight,8 Ch,8ch,#831843
+42,3 / 2-9,3/002,Aputure,MC Pro,8,CCT + RGB 8bit,Mode 1,null,#5aaa8b

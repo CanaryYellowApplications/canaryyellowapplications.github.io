@@ -93,6 +93,14 @@ a {
   margin-left: 2rem;
 }
 
+.tree-note {
+  margin: 0 0 0.15rem;
+  max-width: 42rem;
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
 .file-link {
   display: block;
   color: var(--link);
