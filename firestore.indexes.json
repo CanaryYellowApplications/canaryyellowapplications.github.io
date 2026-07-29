@@ -1,0 +1,31 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "storeCodes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "productPrefix",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "platform",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "expirationDateSort",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "importedAt",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

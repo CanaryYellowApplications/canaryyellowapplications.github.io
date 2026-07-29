@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com; connect-src 'self' https://*.googleapis.com https://*.cloudfunctions.net https://*.firebaseapp.com https://*.google.com; frame-src https://*.firebaseapp.com https://accounts.google.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://accounts.google.com"
+    />
+    <title>Promo Administration | Canary Yellow Applications</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/admin/promos/admin.css" />
+    <script type="module" src="/admin/promos/admin.js"></script>
+  </head>
+  <body>
+    <main class="admin-page">
+      <section class="auth-gate" id="auth-gate" aria-labelledby="auth-heading">
+        <img class="auth-logo" src="/brand/cya-black_birdonly.png" alt="" />
+        <p class="eyebrow">Canary Yellow Applications</p>
+        <h1 id="auth-heading">Promo Administration</h1>
+        <p>Sign in with an authorized Canary Yellow Applications administrator account.</p>
+        <p class="notice error-notice" id="auth-error" role="alert" hidden></p>
+        <button class="primary-button" id="sign-in-button" type="button">Sign in with Google</button>
+      </section>
+
+      <section class="admin-shell" id="admin-shell" hidden>
+        <header class="admin-header">
+          <div class="admin-brand">
+            <img src="/brand/cya-black_birdonly.png" alt="" />
+            <div>
+              <p class="eyebrow">Canary Yellow Applications</p>
+              <h1>Promo Administration</h1>
+            </div>
+          </div>
+          <div class="account-menu">
+            <span id="admin-email"></span>
+            <button class="secondary-button compact-button" id="sign-out-button" type="button">
+              Sign out
+            </button>
+          </div>
+        </header>
+
+        <div class="admin-layout">
+          <nav class="admin-tabs" aria-label="Promo administration sections">
+            <button class="tab-button is-active" type="button" data-panel="overview">Overview</button>
+            <button class="tab-button" type="button" data-panel="products">Products</button>
+            <button class="tab-button" type="button" data-panel="promotions">Promotions</button>
+            <button class="tab-button" type="button" data-panel="claim-tokens">Claim Tokens</button>
+            <button class="tab-button" type="button" data-panel="store-codes">Store Codes</button>
+            <button class="tab-button" type="button" data-panel="redemptions">Redemptions</button>
+          </nav>
+
+          <div class="admin-content">
+            <div class="global-status" id="global-status" role="status" aria-live="polite"></div>
+
+            <section class="admin-panel" id="panel-overview" aria-labelledby="overview-heading">
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Inventory at a glance</p>
+                  <h2 id="overview-heading">Overview</h2>
+                </div>
+                <button class="secondary-button" id="refresh-overview" type="button">Refresh</button>
+              </div>
+              <div class="metric-grid" id="overview-metrics"></div>
+            </section>
+
+            <section class="admin-panel" id="panel-products" aria-labelledby="products-heading" hidden>
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Configuration</p>
+                  <h2 id="products-heading">Products</h2>
+                </div>
+              </div>
+              <form class="record-form" id="product-form">
+                <input id="product-original-prefix" type="hidden" />
+                <div class="form-grid">
+                  <label>
+                    <span>Display name</span>
+                    <input id="product-name-input" type="text" maxlength="80" required />
+                  </label>
+                  <label>
+                    <span>Unique prefix</span>
+                    <input id="product-prefix-input" class="mono" type="text" maxlength="12" required />
+                  </label>
+                </div>
+                <fieldset class="checkbox-fieldset">
+                  <legend>Supported platforms</legend>
+                  <label><input type="checkbox" name="product-platform" value="ios" /> iOS</label>
+                  <label><input type="checkbox" name="product-platform" value="macos" /> macOS</label>
+                  <label><input type="checkbox" name="product-platform" value="android" /> Android</label>
+                </fieldset>
+                <label class="inline-checkbox">
+                  <input id="product-active-input" type="checkbox" checked /> Active
+                </label>
+                <div class="form-actions">
+                  <button class="primary-button" type="submit">Save Product</button>
+                  <button class="secondary-button" id="cancel-product-edit" type="button" hidden>Cancel</button>
+                </div>
+              </form>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Product</th><th>Prefix</th><th>Platforms</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="products-table"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="admin-panel" id="panel-promotions" aria-labelledby="promotions-heading" hidden>
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Configuration</p>
+                  <h2 id="promotions-heading">Promotions</h2>
+                </div>
+              </div>
+              <form class="record-form" id="promotion-form">
+                <input id="promotion-original-prefix" type="hidden" />
+                <div class="form-grid">
+                  <label>
+                    <span>Display name</span>
+                    <input id="promotion-name-input" type="text" maxlength="80" required />
+                  </label>
+                  <label>
+                    <span>Unique prefix</span>
+                    <input id="promotion-prefix-input" class="mono" type="text" maxlength="12" required />
+                  </label>
+                </div>
+                <label class="inline-checkbox">
+                  <input id="promotion-active-input" type="checkbox" checked /> Active
+                </label>
+                <div class="form-actions">
+                  <button class="primary-button" type="submit">Save Promotion</button>
+                  <button class="secondary-button" id="cancel-promotion-edit" type="button" hidden>Cancel</button>
+                </div>
+              </form>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Promotion</th><th>Prefix</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="promotions-table"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="admin-panel" id="panel-claim-tokens" aria-labelledby="claims-heading" hidden>
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Permission inventory</p>
+                  <h2 id="claims-heading">Claim Tokens</h2>
+                </div>
+              </div>
+
+              <div class="admin-card">
+                <h3>Import claim tokens</h3>
+                <p>Paste one token per line, or choose a text or CSV file containing a <code>token</code> column.</p>
+                <label>
+                  <span>Tokens</span>
+                  <textarea id="claim-import-content" class="mono" rows="7" placeholder="CYA-SSM-FREE-7X4M9Q2K"></textarea>
+                </label>
+                <div class="form-grid three-column">
+                  <label>
+                    <span>File</span>
+                    <input id="claim-import-file" type="file" accept=".txt,.csv,text/plain,text/csv" />
+                  </label>
+                  <label>
+                    <span>Format</span>
+                    <select id="claim-import-format"><option value="auto">Detect automatically</option><option value="text">Plain text</option><option value="csv">CSV</option></select>
+                  </label>
+                  <div class="form-actions align-end">
+                    <button class="secondary-button" id="preview-claims" type="button">Preview Import</button>
+                  </div>
+                </div>
+                <div class="import-preview" id="claim-preview" hidden>
+                  <p class="preview-summary" id="claim-preview-summary"></p>
+                  <div class="table-wrap compact-table"><table><thead><tr><th>Row</th><th>Token</th><th>Result</th></tr></thead><tbody id="claim-preview-table"></tbody></table></div>
+                  <button class="primary-button" id="import-claims" type="button" disabled>Import Valid Rows</button>
+                </div>
+              </div>
+
+              <div class="admin-card">
+                <div class="card-heading-row"><h3>Existing claim tokens</h3><button class="secondary-button" id="search-claims" type="button">Search</button></div>
+                <div class="filter-grid">
+                  <label><span>Exact token</span><input id="claim-search" class="mono" type="search" /></label>
+                  <label><span>Product</span><select id="claim-product-filter"><option value="">All products</option></select></label>
+                  <label><span>Promotion</span><select id="claim-promotion-filter"><option value="">All promotions</option></select></label>
+                  <label><span>Status</span><select id="claim-status-filter"><option value="">All statuses</option><option value="available">Available</option><option value="redeemed">Redeemed</option><option value="disabled">Disabled</option></select></label>
+                </div>
+                <div class="table-wrap"><table><thead><tr><th>Claim token</th><th>Product</th><th>Promotion</th><th>Status</th><th>Platform</th><th></th></tr></thead><tbody id="claims-table"></tbody></table></div>
+              </div>
+            </section>
+
+            <section class="admin-panel" id="panel-store-codes" aria-labelledby="codes-heading" hidden>
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Fulfillment inventory</p>
+                  <h2 id="codes-heading">Store Codes</h2>
+                </div>
+              </div>
+
+              <div class="admin-card">
+                <h3>Import store promo codes</h3>
+                <p>Choose the default product and platform, then paste codes or choose a text or CSV file.</p>
+                <div class="form-grid three-column">
+                  <label><span>Product</span><select id="store-import-product" required><option value="">Choose a product</option></select></label>
+                  <label><span>Platform</span><select id="store-import-platform" required><option value="">Choose a platform</option><option value="ios">iOS</option><option value="macos">macOS</option><option value="android">Android</option></select></label>
+                  <label><span>Expiration date</span><input id="store-import-expiration" type="date" /></label>
+                </div>
+                <label>
+                  <span>Store codes</span>
+                  <textarea id="store-import-content" class="mono" rows="7" placeholder="APPLECODE123"></textarea>
+                </label>
+                <div class="form-grid three-column">
+                  <label><span>File</span><input id="store-import-file" type="file" accept=".txt,.csv,text/plain,text/csv" /></label>
+                  <label><span>Format</span><select id="store-import-format"><option value="auto">Detect automatically</option><option value="text">Plain text</option><option value="csv">CSV</option></select></label>
+                  <div class="form-actions align-end"><button class="secondary-button" id="preview-store-codes" type="button">Preview Import</button></div>
+                </div>
+                <div class="import-preview" id="store-preview" hidden>
+                  <p class="preview-summary" id="store-preview-summary"></p>
+                  <div class="table-wrap compact-table"><table><thead><tr><th>Row</th><th>Code</th><th>Product</th><th>Platform</th><th>Expiration</th><th>Result</th></tr></thead><tbody id="store-preview-table"></tbody></table></div>
+                  <button class="primary-button" id="import-store-codes" type="button" disabled>Import Valid Rows</button>
+                </div>
+              </div>
+
+              <div class="admin-card">
+                <div class="card-heading-row"><h3>Store-code inventory</h3><button class="secondary-button" id="search-store-codes" type="button">Search</button></div>
+                <div class="filter-grid">
+                  <label><span>Exact store code</span><input id="store-search" class="mono" type="search" /></label>
+                  <label><span>Product</span><select id="store-product-filter"><option value="">All products</option></select></label>
+                  <label><span>Platform</span><select id="store-platform-filter"><option value="">All platforms</option><option value="ios">iOS</option><option value="macos">macOS</option><option value="android">Android</option></select></label>
+                  <label><span>Status</span><select id="store-status-filter"><option value="">All statuses</option><option value="available">Available</option><option value="assigned">Assigned</option><option value="disabled">Disabled</option><option value="expired">Expired</option></select></label>
+                </div>
+                <div class="table-wrap"><table><thead><tr><th>Store code</th><th>Product</th><th>Platform</th><th>Expiration</th><th>Status</th><th>Assigned claim</th><th></th></tr></thead><tbody id="store-codes-table"></tbody></table></div>
+              </div>
+            </section>
+
+            <section class="admin-panel" id="panel-redemptions" aria-labelledby="redemptions-heading" hidden>
+              <div class="panel-heading-row">
+                <div>
+                  <p class="eyebrow">Assignment record</p>
+                  <h2 id="redemptions-heading">Redemptions</h2>
+                </div>
+                <button class="secondary-button" id="search-redemptions" type="button">Search</button>
+              </div>
+              <div class="filter-grid two-column">
+                <label><span>Exact claim token</span><input id="redemption-search" class="mono" type="search" /></label>
+                <label><span>Platform</span><select id="redemption-platform-filter"><option value="">All platforms</option><option value="ios">iOS</option><option value="macos">macOS</option><option value="android">Android</option></select></label>
+              </div>
+              <div class="table-wrap"><table><thead><tr><th>Claim token</th><th>Product</th><th>Promotion</th><th>Platform</th><th>Redeemed</th><th>Store-code ID</th></tr></thead><tbody id="redemptions-table"></tbody></table></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

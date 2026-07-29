@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.cloudfunctions.net https://*.firebaseapp.com https://*.google.com; frame-src https://*.firebaseapp.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <title>Redeem Your App | Canary Yellow Applications</title>
+    <meta
+      name="description"
+      content="Exchange a Canary Yellow Applications claim token for an available app-store promo code."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/redeem/redeem.css" />
+    <script type="module" src="/redeem/redeem.js"></script>
+  </head>
+  <body>
+    <main class="redemption-page">
+      <section class="redemption-shell" aria-labelledby="page-title">
+        <header class="brand-header">
+          <img
+            class="brand-mark"
+            src="/brand/cya-black_birdonly.png"
+            alt=""
+            width="104"
+            height="104"
+          />
+          <div>
+            <p class="eyebrow">Canary Yellow Applications</p>
+            <h1 id="page-title">Redeem Your App</h1>
+          </div>
+        </header>
+
+        <section class="redemption-state" id="state-initial" aria-labelledby="initial-heading">
+          <div class="state-copy">
+            <h2 id="initial-heading">Enter your claim token</h2>
+            <p>
+              Use the token printed on your Canary Yellow Applications card to receive one
+              available promo code.
+            </p>
+          </div>
+
+          <form id="token-form" novalidate>
+            <label for="claim-token">Claim token</label>
+            <input
+              class="code-input"
+              id="claim-token"
+              name="claim-token"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              autocapitalize="characters"
+              spellcheck="false"
+              placeholder="CYA-SSM-FREE-7X4M9Q2K"
+              aria-describedby="token-help token-error"
+              required
+            />
+            <p class="field-help" id="token-help">
+              Capitalization does not matter. Spaces may be entered in place of hyphens.
+            </p>
+            <p class="field-error" id="token-error" role="alert" hidden></p>
+            <button class="primary-button" id="continue-button" type="submit">Continue</button>
+          </form>
+        </section>
+
+        <section
+          class="redemption-state"
+          id="state-valid"
+          aria-labelledby="valid-heading"
+          hidden
+        >
+          <button class="text-button" id="use-another-token" type="button">
+            &lt; Use a different token
+          </button>
+
+          <div class="claim-summary">
+            <p class="eyebrow">Your claim</p>
+            <h2 id="valid-heading">Valid claim token</h2>
+            <p class="product-name" id="product-name"></p>
+            <p class="promotion-name" id="promotion-name"></p>
+          </div>
+
+          <form id="redeem-form" novalidate>
+            <fieldset id="platform-fieldset">
+              <legend>Choose your platform</legend>
+              <div class="platform-options" id="platform-options"></div>
+            </fieldset>
+
+            <aside class="one-time-warning" aria-labelledby="warning-heading">
+              <h3 id="warning-heading">Important: your promo code will be shown only once.</h3>
+              <p>
+                Copy or redeem the code before closing or refreshing this page. After this claim
+                token is redeemed, the promo code cannot be displayed again.
+              </p>
+            </aside>
+
+            <label class="acknowledgement" for="one-time-acknowledgement">
+              <input id="one-time-acknowledgement" type="checkbox" />
+              <span>I understand that the promo code will only be shown once.</span>
+            </label>
+
+            <p class="field-error" id="redeem-error" role="alert" hidden></p>
+            <button class="primary-button" id="reveal-button" type="submit" disabled>
+              Reveal My Promo Code
+            </button>
+          </form>
+        </section>
+
+        <section
+          class="redemption-state success-state"
+          id="state-success"
+          aria-labelledby="success-heading"
+          hidden
+        >
+          <p class="success-kicker">Redemption complete</p>
+          <h2 id="success-heading">Your Promo Code</h2>
+          <p class="success-product" id="success-product"></p>
+          <div class="revealed-code" id="revealed-code" tabindex="0" aria-label="Your promo code"></div>
+          <button class="primary-button copy-button" id="copy-button" type="button">
+            Copy Code
+          </button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+
+          <aside class="final-warning" aria-label="One-time display reminder">
+            This code will not be shown again after you leave or refresh this page.
+          </aside>
+
+          <div class="redemption-instructions">
+            <h3>Redeem with <span id="success-platform"></span></h3>
+            <p id="platform-instructions"></p>
+          </div>
+        </section>
+
+        <div class="service-status" id="service-status" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+  </body>
+</html>

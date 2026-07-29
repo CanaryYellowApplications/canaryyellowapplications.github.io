@@ -1,1 +1,10 @@
 .DS_Store
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+functions/node_modules/
+functions/.env
+functions/.env.*
+!functions/.env.example
+functions/.secret.local
+functions/coverage/
