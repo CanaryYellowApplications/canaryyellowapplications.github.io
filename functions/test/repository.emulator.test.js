@@ -5,6 +5,7 @@ import { deleteApp, initializeApp } from "firebase-admin/app";
 import { Timestamp, getFirestore } from "firebase-admin/firestore";
 
 import { redeemClaim } from "../src/core.js";
+import { publishClaimTokenBatch } from "../src/desktop.js";
 import { createFirestoreRepository, expirationSortValue } from "../src/repository.js";
 
 const projectId = "demo-cya-promo";
@@ -125,4 +126,35 @@ test("Firestore rolls back code and claim writes when the redemption record cann
   ]);
   assert.equal(claim.data().status, "available");
   assert.equal(code.data().status, "available");
+});
+
+test("desktop publishing is idempotent across retries and canonical capitalization", async () => {
+  await seed({ claims: 0, codes: 0 });
+  const admin = { uid: "admin-1", email: "admin@example.com" };
+  const body = {
+    mutationId: "desktop-mutation-0001",
+    batchId: "desktop-batch-1",
+    tokens: [
+      {
+        token: "CYA-SSM-FREE-a2bc3d4e",
+        productPrefix: "SSM",
+        promotionPrefix: "FREE",
+      },
+    ],
+  };
+
+  const first = await publishClaimTokenBatch(database, admin, body);
+  const exactRetry = await publishClaimTokenBatch(database, admin, body);
+  const laterRetry = await publishClaimTokenBatch(database, admin, {
+    ...body,
+    mutationId: "desktop-mutation-0002",
+  });
+
+  assert.deepEqual(first, exactRetry);
+  assert.equal(first.published, 1);
+  assert.equal(laterRetry.published, 0);
+  assert.equal(laterRetry.alreadyPresent, 1);
+  const claims = await database.collection("claimTokens").get();
+  assert.equal(claims.size, 1);
+  assert.equal(claims.docs[0].id, "CYA-SSM-FREE-A2BC3D4E");
 });

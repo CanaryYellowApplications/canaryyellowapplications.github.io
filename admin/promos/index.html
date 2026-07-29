@@ -75,6 +75,10 @@
                   <h2 id="products-heading">Products</h2>
                 </div>
               </div>
+              <p class="notice workflow-notice">
+                Claim Token Manager is the primary catalog authoring tool. This form remains
+                available for emergency recovery and deliberate cloud-side corrections.
+              </p>
               <form class="record-form" id="product-form">
                 <input id="product-original-prefix" type="hidden" />
                 <div class="form-grid">
@@ -116,6 +120,10 @@
                   <h2 id="promotions-heading">Promotions</h2>
                 </div>
               </div>
+              <p class="notice workflow-notice">
+                Claim Token Manager is the primary catalog authoring tool. This form remains
+                available for emergency recovery and deliberate cloud-side corrections.
+              </p>
               <form class="record-form" id="promotion-form">
                 <input id="promotion-original-prefix" type="hidden" />
                 <div class="form-grid">
@@ -153,7 +161,11 @@
               </div>
 
               <div class="admin-card">
-                <h3>Import claim tokens</h3>
+                <h3>Emergency manual token import</h3>
+                <p class="notice workflow-notice">
+                  Normal token batches are generated and published directly by Claim Token Manager.
+                  Use this importer only for recovery or a deliberate manual workflow.
+                </p>
                 <p>Paste one token per line, or choose a text or CSV file containing a <code>token</code> column.</p>
                 <label>
                   <span>Tokens</span>

@@ -10,6 +10,7 @@ import { onRequest } from "firebase-functions/v2/https";
 
 import { createAdminHandler } from "./admin.js";
 import { redeemClaim, validateClaim } from "./core.js";
+import { exchangeDesktopCode } from "./desktop.js";
 import { isServiceError, ServiceError } from "./errors.js";
 import { createFirestoreRepository } from "./repository.js";
 import {
@@ -128,6 +129,20 @@ function publicErrorMessage(code) {
     redeemed_token_locked: "Redeemed claim tokens cannot be reset.",
     store_code_locked: "Assigned or expired store codes cannot be changed.",
     store_code_expired: "An expired store code cannot be re-enabled.",
+    desktop_code_invalid: "The desktop authorization could not be verified.",
+    desktop_code_expired: "The desktop authorization expired. Start sign-in again.",
+    invalid_desktop_state: "The desktop authorization request is invalid.",
+    invalid_desktop_challenge: "The desktop authorization request is invalid.",
+    invalid_desktop_code: "The desktop authorization request is invalid.",
+    invalid_desktop_verifier: "The desktop authorization request is invalid.",
+    invalid_callback_port: "The desktop callback is invalid.",
+    invalid_mutation_id: "The publishing request identifier is invalid.",
+    invalid_batch_id: "The publishing batch identifier is invalid.",
+    duplicate_in_import: "The publishing batch contains a duplicate token.",
+    token_metadata_mismatch: "A token does not match its product or promotion.",
+    unknown_catalog_prefix: "Create and synchronize the product and promotion first.",
+    mutation_conflict: "That publishing request conflicts with an earlier request.",
+    token_conflict: "A token already exists with different catalog information.",
     not_found: "The requested item could not be found.",
   };
   return messages[code] ?? "The request could not be completed.";
@@ -170,11 +185,20 @@ export const promoApi = onRequest(
       const consumeRateLimit = createRateLimiter(db, pepper);
       const path = pathFor(request);
 
+      if (request.method === "POST" && path === "/desktop/exchange") {
+        await consumeRateLimit(
+          "desktop_exchange",
+          requestSubject(request),
+          12,
+          15 * 60 * 1000,
+        );
+        const result = await exchangeDesktopCode(db, auth, request.body);
+        sendJson(response, 200, { data: result });
+        return;
+      }
+
       if (path.startsWith("/admin/")) {
         const admin = await requirePromoAdmin(request, auth, adminEmailAllowlist());
-        if (enforceAppCheck.value()) {
-          await requireAppCheck(request, appCheck);
-        }
         const result = await createAdminHandler({ db, consumeRateLimit })(
           request,
           admin,

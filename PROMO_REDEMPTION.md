@@ -39,7 +39,24 @@ GitHub Pages
 - Redemption responses use no-store cache headers. The page keeps the revealed code only in memory
   and in the current DOM until the page is dismissed or refreshed.
 - App Check support is built in but should be enforced only after the web app and reCAPTCHA
-  Enterprise key are configured and valid traffic has been observed.
+  Enterprise key are configured and valid public redemption traffic has been observed. Authenticated
+  desktop publishing uses PKCE and Firebase Authentication instead of browser App Check.
+
+## Claim Token Manager publishing
+
+Claim Token Manager is the primary product, promotion, and claim-token authoring surface. Firebase
+is authoritative for the catalog that is actually published, token availability, inventory, and
+redemption state.
+
+Desktop connection uses an unlisted `/admin/promos/connect/` page opened in Safari. The utility
+creates a random loopback port, state value, and PKCE verifier/challenge. After an authorized Google
+sign-in, the backend issues a five-minute, single-use authorization code bound to that challenge.
+Only the local utility holding the verifier can exchange it. The resulting Firebase refresh token is
+stored in macOS Keychain; no service-account key is embedded or written to SQLite.
+
+Generated batches are committed to SQLite before upload. The desktop publisher sends at most 400
+tokens per atomic request and Firebase records an idempotency mutation plus an audit event. A retry
+after a lost response treats matching existing tokens as success and rejects metadata conflicts.
 
 ## Firestore collections
 
@@ -85,6 +102,17 @@ redemptions. Complete store-code values and request bodies are never logged.
 Hashed rate-limit subject, window end, and request count. These documents can be retained or cleaned
 up periodically; automatic Firestore TTL deletion is billable and is not enabled by default.
 
+### `desktopAuthCodes/{SHA256_CODE}`
+
+Five-minute, single-use desktop authorization records containing only a code fingerprint, PKCE
+challenge, administrator identity, callback port, and timestamps. The raw authorization code and
+verifier are never stored.
+
+### `publisherMutations/{MUTATION_ID}`
+
+Idempotency result for a Claim Token Manager upload chunk. It prevents an ambiguous network retry
+from creating a second logical publishing action.
+
 ## Firebase project setup
 
 Use a dedicated Firebase project for this service. A separate project keeps its data, billing,
@@ -123,7 +151,9 @@ operational safeguard; alerts notify but do not impose a hard spending cap.
 
 ## App Check rollout
 
-The public and admin clients support Firebase App Check with reCAPTCHA Enterprise.
+The public web client supports Firebase App Check with reCAPTCHA Enterprise. Authenticated admin and
+desktop publisher endpoints use verified Firebase identity, server-side authorization, and separate
+rate limits so the native utility is not coupled to a browser challenge.
 
 1. Register the Web app in Firebase App Check and create a reCAPTCHA Enterprise site key for the
    production domains.
@@ -131,7 +161,8 @@ The public and admin clients support Firebase App Check with reCAPTCHA Enterpris
    enabling limited-use token consumption.
 2. Set `appCheckSiteKey` in `scripts/promo-config.js`.
 3. Deploy with `PROMO_REQUIRE_APP_CHECK=false` first and confirm legitimate requests receive tokens.
-4. Change the project environment value to `true` and redeploy the Function.
+4. Change the project environment value to `true` and redeploy the Function. This enables
+   enforcement on public validation and redemption routes only.
 
 Redemption requests use limited-use tokens and the backend consumes them to add replay protection.
 

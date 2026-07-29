@@ -11,6 +11,7 @@ import {
   parseExpirationDate,
 } from "./core.js";
 import { ServiceError } from "./errors.js";
+import { authorizeDesktop, publishClaimTokenBatch } from "./desktop.js";
 import {
   previewClaimTokenImport,
   previewStoreCodeImport,
@@ -566,6 +567,21 @@ export function createAdminHandler({ db, consumeRateLimit }) {
 
     if (method === "GET" && path === "/admin/overview") {
       return overview(db);
+    }
+    if (method === "GET" && path === "/admin/desktop/status") {
+      return {
+        email: admin.email ?? null,
+        uid: admin.uid,
+        authorized: true,
+      };
+    }
+    if (method === "POST" && path === "/admin/desktop/authorize") {
+      await consumeRateLimit("desktop_authorize", admin.uid, 20, 60 * 60 * 1000);
+      return authorizeDesktop(db, admin, request.body);
+    }
+    if (method === "POST" && path === "/admin/publisher/claim-tokens") {
+      await consumeRateLimit("publisher_commit", admin.uid, 60, 60 * 60 * 1000);
+      return publishClaimTokenBatch(db, admin, request.body);
     }
     if (method === "GET" && path === "/admin/products") {
       return listProducts(db);

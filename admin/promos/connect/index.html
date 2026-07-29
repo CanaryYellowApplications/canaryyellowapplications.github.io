@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://apis.google.com; style-src 'self'; img-src 'self' data: https://*.googleusercontent.com; connect-src 'self' https://*.googleapis.com https://*.cloudfunctions.net https://*.firebaseapp.com https://*.google.com; frame-src https://*.firebaseapp.com https://accounts.google.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <title>Connect Claim Token Manager | Canary Yellow Applications</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/admin/promos/connect/connect.css" />
+    <script type="module" src="/admin/promos/connect/connect.js"></script>
+  </head>
+  <body>
+    <main class="connect-page">
+      <section class="connect-card" aria-labelledby="connect-heading">
+        <img src="/brand/cya-black_birdonly.png" alt="" />
+        <p class="eyebrow">Canary Yellow Applications</p>
+        <h1 id="connect-heading">Connect Claim Token Manager</h1>
+        <p class="introduction">
+          Sign in to authorize the local macOS utility to publish products, promotions, and
+          claim-token batches. Store-code inventory and redemption operations remain in the web
+          administration console.
+        </p>
+        <div class="security-note">
+          <strong>What this does</strong>
+          <p>
+            Authorization returns only to Claim Token Manager on this Mac. No Firebase service
+            account or permanent administrator key is placed in the utility.
+          </p>
+        </div>
+        <p class="status" id="connect-status" role="status" aria-live="polite"></p>
+        <p class="error" id="connect-error" role="alert" hidden></p>
+        <div class="actions">
+          <button class="primary" id="authorize-button" type="button">
+            Sign in and authorize
+          </button>
+          <button class="secondary" id="cancel-button" type="button">Cancel</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

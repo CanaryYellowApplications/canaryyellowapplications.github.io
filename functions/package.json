@@ -9,9 +9,9 @@
     "node": "22"
   },
   "scripts": {
-    "test": "node --test test/core.test.js test/imports.test.js test/security.test.js",
+    "test": "node --test test/core.test.js test/desktop.test.js test/imports.test.js test/security.test.js",
     "test:emulator": "firebase emulators:exec --project demo-cya-promo --only firestore \"node --test test/firestore-rules.test.js test/repository.emulator.test.js\"",
-    "check": "node --check src/index.js && node --check src/admin.js && node --check src/core.js && node --check src/imports.js && node --check src/repository.js"
+    "check": "node --check src/index.js && node --check src/admin.js && node --check src/core.js && node --check src/desktop.js && node --check src/imports.js && node --check src/repository.js"
   },
   "dependencies": {
     "csv-parse": "^7.0.1",
